@@ -2,15 +2,15 @@
 
 FMU simulation models for sustainability analytics of 6-axis robotic modules (Kuka and ABB) with roller hemming or welding tools mounted
 
-## Carbon emission FMU
+## Carbon emission FMU (modapto-cfp-*.fmu)
 
 The FMU implements a model for calculation of carbon emission based on energy consumption (of 6-axis robotic modules (Kuka and ABB) with roller hemming or welding tools mounted)
 
-## Fake Energy Consumption FMU
+## Fake Energy Consumption FMU (modapto-fecm*.fmu)
 
 This is an intermediate step for the development of the Energy cosumption FMU, which implements a first model for calculation of energy consumption (of 6-axis robotic modules (Kuka and ABB) with roller hemming or welding tools mounted)
 
-## Energy Consumption FMU
+## Energy Consumption FMU (modapto-ecm*.fmu)
 
 The FMU implements two models for calculation of energy consumption (of 6-axis robotic modules (Kuka and ABB) with roller hemming or welding tools mounted)
 * a simple electrical model
