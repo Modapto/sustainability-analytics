@@ -1,10 +1,13 @@
 # SustainabilityAnalyticsFMUs
-FMU simulation models for sustainability analytics
+
+FMU simulation models for sustainability analytics of 6-axis robotic modules (Kuka and ABB) with roller hemming or welding tools mounted
+
 ##Carbon emission FMU
 
 The FMU implements a model for calculation of carbon emission based on energy consumption (of 6-axis robotic modules (Kuka and ABB) with roller hemming or welding tools mounted)
 
 ## Fake Energy Consumption FMU
+
 This is an intermediate step for the development of the Energy cosumption FMU, which implements a first model for calculation of energy consumption (of 6-axis robotic modules (Kuka and ABB) with roller hemming or welding tools mounted)
 
 ##Energy Consumption FMU
