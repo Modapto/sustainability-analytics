@@ -21,7 +21,9 @@ Both models use
 * the inputs `start_measurement`, `stop_measurement`, and `reset_measurement`
 * the outputs `measurement_state`, `timestamp_start`, `timestamp_stop`, `robot.used_energy`, and `robot.used_power`.
 
-The input `use_electric` configures which model is used.
+The input `use_electric` configures which model is used. 
+If `use_electric`is set to false, the kinetic/dynamic model is used. 
+If `use_electric`is set to true, the simple electrical model is used. 
 
 ### Electrical model
 
