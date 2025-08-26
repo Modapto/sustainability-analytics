@@ -11,9 +11,9 @@ The FMU implements a general model for calculation of carbon emission based on e
 
 This is an intermediate step for the development of the Energy cosumption FMU, which implements a first model for calculation of energy consumption (of 6-axis robotic modules (Kuka and ABB) with roller hemming or welding tools mounted).
 
-## Energy Consumption FMU (modapto-ecm*.fmu)
+## Energy Consumption FMUs (modapto-ecm*.fmu)
 
-The FMU implements two models for calculation of energy consumption (of 6-axis robotic modules (Kuka and ABB) with roller hemming or welding tools mounted)
+The FMUs implement two models for calculation of energy consumption (of 6-axis robotic modules (Kuka and ABB) with roller hemming or welding tools mounted)
 * a simple electrical model
 * a kinetic/dynamic model
 
@@ -22,17 +22,13 @@ Both models use
 * the inputs `start_measurement`, `stop_measurement`, and `reset_measurement`
 * the outputs `measurement_state`, `timestamp_start`, `timestamp_stop`, `robot.used_energy`, and `robot.used_power`.
 
-The input `use_electric` configures which model is used. 
-If `use_electric`is set to false, the kinetic/dynamic model is used. 
-If `use_electric`is set to true, the simple electrical model is used. 
-
-### Electrical model
+### Energy Consumption FMU - electrical model (modapto-ecm-electric*.fmu)
 
 The electrical model calculates energy from the motor currents and a hard coded voltage of 230 V.
 
 The model uses the inputs `max_current[…]` and `current[…]`
 
-### Kinetic model
+### Energy Consumption FMU - kinetic/mechanical/dynamic model (modapto-ecm-mechanic*.fmu)
 
 The kinetic model uses the robot's kinematic chain, masses and inertias etc., and the robot joint values, velocities, and accelerations.
 
@@ -43,9 +39,3 @@ Used inputs: `robot.axis_val[…]`, `robot.axis_vel[…]`, `robot.axis_acc[…]`
 Used parameters: `gravity` and `robot.version`
 
 Unused inputs (so far): `robot.axis_jerk[…]`, `robot.press_hem_roller`, `robot.t_move`, `robot.t_weld`
-
-## Energy Consumption FMU Electric (modapto-ecm-electric.fmu)
-FMU containing only the simple electrical model of the modapto-ecm*.fmu.
-
-## Energy Consumption FMU Mechanic (modapto-ecm-mechanic.fmu)
-FMU containing only the kinetic/dynamic model of the modapto-ecm*.fmu.
