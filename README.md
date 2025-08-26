@@ -39,3 +39,7 @@ Used inputs: `robot.axis_val[…]`, `robot.axis_vel[…]`, `robot.axis_acc[…]`
 Used parameters: `gravity` and `robot.version`
 
 Unused inputs (so far): `robot.axis_jerk[…]`, `robot.press_hem_roller`, `robot.t_move`, `robot.t_weld`
+
+## Test input data
+
+For each FMU, corresponding test input data in *.csv format is available. The correspondance is indicated by the name of the files.
