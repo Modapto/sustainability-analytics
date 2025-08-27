@@ -17,7 +17,7 @@ The calculation is intentionally wrong. Its main purpose is to check connectivit
 
 ## Energy Consumption FMUs (modapto-ecm*.fmu)
 
-The FMUs implement two models for calculation of energy consumption (of 6-axis robotic modules (Kuka and ABB) with roller hemming or welding tools mounted). There are different variants of this model available depending on which model is used internally.
+The FMUs implement different models for calculation of energy consumption (of 6-axis robotic modules (Kuka and ABB) with roller hemming or welding tools mounted). There are variants of this model available: one model focuses on electrical values that are only available on certain robot controllers. The other approach is more generic and bases on electrical and mechanocal modelling of the robots.
 
 ### Common considerations
 
