@@ -56,7 +56,7 @@ In the case of hard-coded voltages, the model has the following inputs/parameter
 
 Additionally, the inputs under [common considerations](#common-considerations) need to be taken into account.
 
-[ElectricalFMU](ElectricalFMU.png)
+![ElectricalFMU](ElectricalFMU.png)
 
 ### Energy Consumption FMU - kinetic/mechanical/dynamic model (modapto-ecm-mechanic*.fmu)
 
@@ -77,7 +77,7 @@ The kinematic model is built internally, depending on the input `robot.version`.
 
 The inpute `robot.axis_jerk[…]`, `robot.press_hem_roller`, `robot.t_move`, and `robot.t_weld` are only historically present and not used so far.
 
-[MechanicalFMU](MechanicalFMU.png)
+![MechanicalFMU](MechanicalFMU.png)
 
 ### Energy consumption FMU - legacy combined model (modapto-ecm-[0-9-]*.fmu)
 
