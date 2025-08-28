@@ -5,6 +5,8 @@ Please note that the time input variable for FMI co-simulation is mandatory for 
 
 When evaluating the FMUs, it is mandatory to fill in all parameters and input values during simulation to run the FMU correctly.
 
+The FMI Version is 2.0.
+
 ## Carbon emission FMU (modapto-cfp-*.fmu)
 
 The FMU implements a general model for calculation of carbon emission based on energy mix factor and power consumption. This can for example be the power of  a 6-axis robotic module (Kuka and ABB) with roller hemming or welding tools mounted as described in the next section.
@@ -54,6 +56,8 @@ In the case of hard-coded voltages, the model has the following inputs/parameter
 
 Additionally, the inputs under [common considerations](#common-considerations) need to be taken into account.
 
+[ElectricalFMU](ElectricalFMU.png)
+
 ### Energy Consumption FMU - kinetic/mechanical/dynamic model (modapto-ecm-mechanic*.fmu)
 
 The kinetic model uses the robot's kinematic chain, masses and inertias etc., and the robot joint values, velocities, and accelerations to cacluclate the used power needed by the mechanical (sub-) system. The mechanical power is provided by motors and power electronics that have their individual power characteristics.
@@ -72,6 +76,8 @@ Additionally, the inputs under [common considerations](#common-considerations) n
 The kinematic model is built internally, depending on the input `robot.version`. The value must be present during initilization phase of the FMU and cannot change during model execution.
 
 The inpute `robot.axis_jerk[…]`, `robot.press_hem_roller`, `robot.t_move`, and `robot.t_weld` are only historically present and not used so far.
+
+[MechanicalFMU](MechanicalFMU.png)
 
 ### Energy consumption FMU - legacy combined model (modapto-ecm-[0-9-]*.fmu)
 
